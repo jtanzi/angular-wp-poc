@@ -1,4 +1,13 @@
-# AngularPocR2
+# Angular POC
+
+This project serves as a proof-of-concept to show how one could manage a WordPress site through an Angular front-end application. The goal is to allow the entry of a Wordpress site URL at launch and then view/manage pages and posts, including the following operations:
+
+Create pages
+Edit pages
+Delete pages
+Create posts
+Edit posts
+Delete posts
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
