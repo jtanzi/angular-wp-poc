@@ -17,6 +17,7 @@ import { SiteSetupComponent } from './site-setup/site-setup.component';
 import { SiteEditComponent } from './site-edit/site-edit.component';
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './@services/auth.service';
+import { SiteService } from './@services/site.service';
 
 
 @NgModule({
@@ -37,7 +38,7 @@ import { AuthService } from './@services/auth.service';
     PasswordModule,
     ReactiveFormsModule,
   ],
-  providers: [ AuthService ],
+  providers: [ AuthService, SiteService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

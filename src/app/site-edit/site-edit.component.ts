@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SiteService } from '../@services/site.service';
 
 @Component({
   selector: 'app-site-edit',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SiteEditComponent implements OnInit {
 
-  constructor() { }
+  pages: any[];
+
+  constructor(
+    private siteService: SiteService
+  ) { }
 
   ngOnInit() {
+
+    this.siteService.getPages();
   }
 
 }
